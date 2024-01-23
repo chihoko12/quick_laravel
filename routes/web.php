@@ -24,3 +24,6 @@ Route::get('/hello', [HelloController::class, 'index']);
 // Route::get('hello', function() {
 //   return 'Hello World!';
 // });
+
+// ('/hello/view')
+Route::get('hello/view', [HelloController::class, 'view']);
