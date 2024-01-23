@@ -6,5 +6,16 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    //
+
+  public function index() {
+
+    return 'Hello World!';
+  }
+
+  public function view() {
+    $data = [
+      'msg' => 'Hello World!'
+    ];
+    return view('hello.view', $data);
+  }
 }
