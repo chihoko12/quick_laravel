@@ -34,3 +34,9 @@ Route::get('hello/list', [HelloController::class, 'list']);
 
 // ('/view/escape')
 Route::get('view/escape', [ViewController::class, 'escape']);
+
+// ('/view/if')
+Route::get('view/if', [ViewController::class, 'if']);
+
+// ('/view/unless')
+Route::get('view/unless', [ViewController::class, 'unless']);

@@ -1,3 +1,4 @@
+<?php>
 {!! $msg !!}
 <br>
 {{ $msg }}
@@ -9,3 +10,4 @@
 @endverbatim
 <!-- Comment -->
 {{-- Comment --}}
+<?>
