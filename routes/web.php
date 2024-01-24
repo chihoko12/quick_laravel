@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\ViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,6 @@ Route::get('hello/view', [HelloController::class, 'view']);
 
 // ('/hello/list')
 Route::get('hello/list', [HelloController::class, 'list']);
+
+// ('/view/escape')
+Route::get('view/escape', [ViewController::class, 'escape']);
