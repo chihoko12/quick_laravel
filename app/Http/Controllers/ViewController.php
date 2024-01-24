@@ -30,6 +30,7 @@ class ViewController extends Controller
     return view('view.isset', [
       'msg' => 'Hello World!',
     ]);
+    // return view('view.isset');
   }
 
 }
