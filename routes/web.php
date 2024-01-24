@@ -27,3 +27,6 @@ Route::get('/hello', [HelloController::class, 'index']);
 
 // ('/hello/view')
 Route::get('hello/view', [HelloController::class, 'view']);
+
+// ('/hello/list')
+Route::get('hello/list', [HelloController::class, 'list']);
