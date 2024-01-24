@@ -40,3 +40,6 @@ Route::get('view/if', [ViewController::class, 'if']);
 
 // ('/view/unless')
 Route::get('view/unless', [ViewController::class, 'unless']);
+
+// ('/view/isset')
+Route::get('view/isset', [ViewController::class, 'isset']);
