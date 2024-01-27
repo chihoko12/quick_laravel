@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\ViewController;
+use App\Http\Controllers\RouteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,3 +68,6 @@ Route::get('view/comp', [ViewController::class, 'comp']);
 
 // ('/view/list')
 Route::get('view/list', [ViewController::class, 'list']);
+
+// ('/route/param/{id}')
+Route::get('route/param/{id}', [RouteController::class, 'param']);
