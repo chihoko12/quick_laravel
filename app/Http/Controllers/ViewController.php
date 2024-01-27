@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Book;
 
 class ViewController extends Controller
 {
@@ -61,6 +62,23 @@ class ViewController extends Controller
     return view('view.foreach_loop', [
       'weeks' => [ 'Mo', 'Tu' , 'We' , 'Th', 'Fr', 'Sa', 'So' ]
     ]);
+  }
+
+  public function master() {
+    return view('view.master', [
+      'msg' => 'Hello World!',
+    ]);
+  }
+
+  public function comp() {
+    return view('view.comp');
+  }
+
+  public function list() {
+    $data = [
+      'records' => Book::all()
+    ];
+    return view('view.list', $data);
   }
 
 }

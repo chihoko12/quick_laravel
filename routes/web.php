@@ -58,3 +58,12 @@ Route::get('view/foreach_assoc', [ViewController::class, 'foreach_assoc']);
 
 // ('/view/foreach_loop')
 Route::get('view/foreach_loop', [ViewController::class, 'foreach_loop']);
+
+// ('/view/master')
+Route::get('view/master', [ViewController::class, 'master']);
+
+// ('/view/comp')
+Route::get('view/comp', [ViewController::class, 'comp']);
+
+// ('/view/list')
+Route::get('view/list', [ViewController::class, 'list']);
