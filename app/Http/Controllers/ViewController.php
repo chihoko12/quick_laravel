@@ -47,4 +47,14 @@ class ViewController extends Controller
     return view('view.for');
   }
 
+  public function foreach_assoc() {
+    return view('view.foreach_assoc', [
+      'member' => [
+        'name' => 'YAMADA, Yoshihiro',
+        'sex' => 'man',
+        'birth' => '1923-11-10'
+      ]
+      ]);
+  }
+
 }

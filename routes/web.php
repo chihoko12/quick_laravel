@@ -52,3 +52,6 @@ Route::get('view/while', [ViewController::class, 'while']);
 
 // ('/view/for')
 Route::get('view/for', [ViewController::class, 'for']);
+
+// ('/view/foreach_assoc')
+Route::get('view/foreach_assoc', [ViewController::class, 'foreach_assoc']);

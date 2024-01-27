@@ -8,14 +8,16 @@
   <body>
     <table class="table">
       <tr>
+        <th>No.</th>
         <th>Book name</th>
         <th>Price</th>
         <th>Publisher</th>
         <th>Published Date</th>
       </tr>
 
-      @foreach($records as $record)
+      @foreach($records as $id => $record)
         <tr>
+          <td>{{ $id + 1 }}</td>
           <td>{{ $record->title }}</td>
           <td>{{ $record->price }}</td>
           <td>{{ $record->publisher }}</td>
