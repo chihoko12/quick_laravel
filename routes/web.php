@@ -46,3 +46,9 @@ Route::get('view/isset', [ViewController::class, 'isset']);
 
 // ('/view/switch')
 Route::get('view/switch', [ViewController::class, 'switch']);
+
+// ('/view/while')
+Route::get('view/while', [ViewController::class, 'while']);
+
+// ('/view/for')
+Route::get('view/for', [ViewController::class, 'for']);

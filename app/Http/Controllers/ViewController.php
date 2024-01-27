@@ -39,4 +39,12 @@ class ViewController extends Controller
     ]);
   }
 
+  public function while() {
+    return view('view.while');
+  }
+
+  public function for() {
+    return view('view.for');
+  }
+
 }
