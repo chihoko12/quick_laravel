@@ -57,4 +57,10 @@ class ViewController extends Controller
       ]);
   }
 
+  public function foreach_loop() {
+    return view('view.foreach_loop', [
+      'weeks' => [ 'Mo', 'Tu' , 'We' , 'Th', 'Fr', 'Sa', 'So' ]
+    ]);
+  }
+
 }
