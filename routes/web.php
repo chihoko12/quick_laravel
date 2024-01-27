@@ -43,3 +43,6 @@ Route::get('view/unless', [ViewController::class, 'unless']);
 
 // ('/view/isset')
 Route::get('view/isset', [ViewController::class, 'isset']);
+
+// ('/view/switch')
+Route::get('view/switch', [ViewController::class, 'switch']);

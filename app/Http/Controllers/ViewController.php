@@ -33,4 +33,10 @@ class ViewController extends Controller
     // return view('view.isset');
   }
 
+  public function switch(){
+    return view('view.switch', [
+      'random' => random_int(1,5)
+    ]);
+  }
+
 }
