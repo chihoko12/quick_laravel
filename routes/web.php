@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
 use App\Http\Controllers\ViewController;
 use App\Http\Controllers\RouteController;
+use App\Http\Controllers\CtrlController;
 
 /*
 |--------------------------------------------------------------------------
@@ -106,5 +107,14 @@ Route::fallback(function() {
   return view('route.error');
 });
 
+// ctrl/header
+Route::get('ctrl/header', [CtrlController::class, 'header']);
 
+// ctrl/outJson
+Route::get('ctrl/outJson', [CtrlController::class, 'outJson']);
 
+// ctrl/outFile
+Route::get('ctrl/outFile', [CtrlController::class, 'outFile']);
+
+// ctrl/outCsv
+Route::get('ctrl/outCsv', [CtrlController::class, 'outCsv']);
