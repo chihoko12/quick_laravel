@@ -72,3 +72,39 @@ Route::get('view/list', [ViewController::class, 'list']);
 // ('/route/param/{id}')
 Route::get('route/param/{id?}', [RouteController::class, 'param'])
 ->where(['id' => '[0-9]{2,3}']);
+
+// ('/route/search/{keywd?}')
+Route::get('route/search/{keywd?}', [RouteController::class, 'search'])
+->where('keywd','.*');
+
+// ('/route/members')
+// Route::prefix('members')->group(function() {
+//   Route::get('info', RouteController::class, 'info');
+//   Route::get('article', RouteController::class, 'article');
+// });
+
+// ('/route/ns')
+// Route::namespace('Main')->group(function() {
+//   Route::get('route/ns', RouteController::class, 'ns');
+// });
+
+// ('/route')
+Route::view('/route', 'route.view', [ 'name' => 'Laravel' ]);
+
+// redirect('/')
+Route::redirect('/hoge','/');
+
+// moved permanently('/')
+Route::redirect('/hoge','/',301);
+
+// resource
+Route::resource('articles', 'ArticleController')
+->except([ 'edit','update' ]);
+
+// fallback
+Route::fallback(function() {
+  return view('route.error');
+});
+
+
+
